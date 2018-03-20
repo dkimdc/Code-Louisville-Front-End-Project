@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <!-- Link Main CSS -->
+
+    <link rel="stylesheet" href="./css/main.css">
+    
+    <div class="photo-header">
+        <h1>Jackson Case</h1>
+        <h2>Trinity High School 2020</h2>
+    </div>
+               
+</head>
+
+<body>
+    <!-- Use Flexbox to display photos in 2 Rows -->
+
+    <div class = "row">
+        <div class = "col"><img src="./img/jh-swing.jpg" alt="Jackson Swinging" onclick="showImage('./img/jh-swing.jpg');"></div>
+        <div class = "col"><img src="./img/t-jump.jpg" alt="Jackson Jumping for Ball" onclick="showImage('./img/t-jump.jpg');"></div>
+        <div class = "col"><img src="./img/t-creep.jpg" alt="Jackson Creeping at Short" onclick="showImage('./img/t-creep.jpg');"></div>
+        <div class = "col"><img src="./img/jh-field.jpg" alt="Jackson Tracking the Ball" onclick="showImage('./img/jh-field.jpg');"></div>
+        <div class = "col"><img src="./img/jh-bat.jpg" alt="Jackson at Bat" onclick="showImage('./img/jh-bat');"></div>
+        <div class = "col"><img src="./img/jh-throw.jpg" alt="Jackson Throwing the Ball" onclick="showImage('./img/jh-throw.jpg');"></div>
+    </div>
+
+
+    <!-- Format Larger Image When Image Clicked -->
+
+    <div id="largeImgPanel" onclick="hideMe(this);">
+    <img id="largeImg" style="height: 100%; margin: 0; padding: 0;">
+    
+    <!-- Link to JQuery for Flexbox -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <!-- Link to Javascript -->
+    <script src="./js/app.js"></script>
+
+</body>
+    
