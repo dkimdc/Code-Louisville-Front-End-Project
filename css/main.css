@@ -1,0 +1,115 @@
+h1 {
+  background-color: green;
+  font-size: 50px;
+  color: white;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+h2 {
+  background-color: green;
+  font-size: 30px;
+  color: white;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-family: "Verdana";
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.main-row {
+  display: block;
+  padding-top: 1em;
+  padding-left: .5em;
+  padding-right: .5em;
+}
+
+.main-col-intro {
+  width: 100%;
+  flex: 1;
+  background-color: green;
+  font-family: "Verdana";
+  text-align: center;
+}
+
+.main-col-photo {
+  width: 100%;
+  flex: 1;
+}
+
+.nav-item {
+  font-size: 20px;
+}
+
+.navbar-brand {
+  font-size: 35px;
+}
+
+.navbar {
+  margin-left: 10px!important;
+  margin-right: 10px!important;
+}
+
+
+img {
+  max-width: 100%; /*Keeps the img in its container*/
+}
+
+.col {
+  padding: 0 1em;
+  flex: 1; 
+  min-width: 200px;
+}
+
+.row {
+  display: block;
+  width: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#largeImgPanel {
+  text-align: center;
+  visibility: hidden;
+  position: fixed;
+  z-index: 100;
+  top: 0; left: 0; 
+  width:100%;
+  height:100%; 
+  background-color: rgba(100,100,100, 0.5);
+}
+
+@media (min-width: 600px) {
+  .row {
+    width: 600px;
+    display: flex;
+  }
+}
+@media (min-width: 769px) {
+
+  .main-row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .main-col-intro,
+  .main-col-photo {
+    justify-content: space-around
+  }
+
+  .row {
+    width: 900px;
+    display: flex;
+  }
+
+  .photo-header {
+    max-width: 870px;
+    margin-left: 15px;
+  }
+
+
+}
